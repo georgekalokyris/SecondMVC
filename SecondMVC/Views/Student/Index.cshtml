@@ -1,0 +1,10 @@
+﻿@model IEnumerable<SecondMVC.Models.Student>
+
+<ul>
+    
+        @foreach (var student in Model)
+        {
+         <li> @student.Name @student.Score </li>
+        }
+    
+</ul>

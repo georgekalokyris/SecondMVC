@@ -1,0 +1,23 @@
+﻿@model IEnumerable<SecondMVC.Models.Trainer>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Subject</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var trainer in Model)
+        {
+            <tr>
+                <td> @trainer.FirstName  </td>
+                <td> @trainer.LastName   </td>
+                <td>@trainer.Subject     </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
